@@ -8,7 +8,7 @@
             "files": "*.html",
             "options": {
                 "tabWidth": 2,
-                "printWidth": 100
+                "printWidth": 180
             }
         },
         {

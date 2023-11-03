@@ -63,6 +63,34 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.skills{
+    top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.skills h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.skills-bars{
+    padding-top: 20px;
+}
+
+.skills-bars .row .col h4{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.cloud-architectures{
+    width: 0%;
+    background-color: #6667ab;
+}
 
 .timeline{
     margin: 50px auto;

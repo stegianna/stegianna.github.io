@@ -17,4 +17,4 @@ let options = {
 
 let observer = new IntersectionObserver(callbackFunc, options);
 
-observer.observe(document.getElementById('cloud-architectures'));
+document.querySelectorAll('.skill-bar').forEach((el) => observer.observe(el));

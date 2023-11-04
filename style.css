@@ -40,13 +40,19 @@
     text-transform: uppercase;
 }
 
-#about{
+#about, #resume{
     background-color: #f1f0ec;
 }
 
-.section-title{
+#about .section-title{
     text-align: center;
     padding-top: 50px;
+    position: relative;
+}
+
+#resume .section-title{
+    text-align: center;
+    padding-top: 100px;
     position: relative;
 }
 
@@ -63,33 +69,37 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.skills{
-    top: 20px;
+.sub-section{
+    top: 30px;
     text-align: center;
     position: relative;
 }
 
-.skills h3{
+.sub-section h3{
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     text-transform: uppercase;
 }
 
-.skills-bars{
-    padding-top: 20px;
+.sub-section-content{
+    padding-top: 25px;
 }
 
-.skills-bars .row .col h4{
+.sub-section-content .row .col h4{
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     text-align: left;
     font-size: 15px;
-    font-weight: 550;
+    font-weight: 500;
 }
 
-.cloud-architectures{
+.skill-bar{
     width: 0%;
-    background-color: #6667ab;
+    background-color: #8f7c64;
+}
+
+.progress{
+    margin-bottom: 20px;
 }
 
 .timeline{
@@ -140,4 +150,51 @@
     left: -9px;
     background: #f1f0ec;
     border: 2px solid #6667ab;;
+}
+
+#resume .sub-section-content{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+.certification{
+    border: #6667ab;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 30px 50px;
+    margin: auto 30px;
+}
+
+.certification-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.certification-validity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.certification-validity p{
+    margin-bottom: 0px;
+    margin-right: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.certification-title h5{
+    margin-bottom: 0px;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.certification h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
 }

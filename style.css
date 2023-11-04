@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
+
+.header-transparent{
+    background: transparent;
+    transition: 0.3s;
+    height: 90px;
+}
+
+.header-scrolled{
+    height: 60px;
+    background: #8f7c64a0;
+    transition: 0.7s;
+}
+
 .nav-item {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
@@ -81,7 +94,7 @@
     text-transform: uppercase;
 }
 
-.sub-section-content{
+.sub-section-content .row{
     padding-top: 25px;
 }
 

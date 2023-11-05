@@ -22,8 +22,8 @@ document.querySelectorAll('.skill-bar').forEach((el) => observer.observe(el));
 const header = document.getElementById('header');
 
 window.onscroll = () => {
-    console.log('scrolled');
-    console.log(window.scrollY);
+    //console.log('scrolled');
+    //console.log(window.scrollY);
     if (window.scrollY === 0) {
         header.classList.remove('header-scrolled');
     } else {

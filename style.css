@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 
 .header-transparent{
@@ -44,7 +45,7 @@
 #hero .hero-container h1{
     margin: 0 0 10px 0;
     font-size: 60px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 #hero .hero-container h2{
@@ -80,7 +81,7 @@
 .section-title p{
     font-size: 17px;
     padding-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .sub-section{
@@ -100,7 +101,7 @@
 }
 
 .sub-section-content .row .col h4{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-align: left;
     font-size: 15px;
@@ -138,7 +139,7 @@
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 550;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 
@@ -146,13 +147,13 @@
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 550;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     color: #8f7c64;
 }
 
 .timeline-item-right h5, .timeline-item-left h5{
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .timeline-item-right::before{
@@ -168,7 +169,7 @@
 }
 
 #resume .sub-section-content{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     text-align: center;
     align-items: center;
 }
@@ -198,19 +199,19 @@
 .certification-validity p{
     margin-bottom: 0px;
     margin-right: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
 
 .certification-title h5{
     margin-bottom: 0px;
     margin-left: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
 }
 
 .certification h6{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 17px;
 }
 
@@ -247,6 +248,9 @@
 .carousel-indicators [data-bs-target]{
     background-color: #f1f0ec;
 }
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover{
+    color: #f1f0ec;
+}
 
 .quote{
     z-index: 1;
@@ -254,15 +258,20 @@
     margin: 100px 200px;    
 }
 
+.quote-2-rows{
+    margin:70px 200px; 
+}
+
 .quote h6{
-    font-family: 'Courgette', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
+    font-weight: 450;
 }
 
 .quote h6::before{
     content: "“";
     position: relative;
-    font-family: 'Courgette', cursive;
+    font-family: 'Roboto', sans-serif;
     left: -10px;
     font-size: 50px;
 }
@@ -270,11 +279,11 @@
 .quote h6::after{
     content: "”";
     position: relative;
-    font-family: 'Courgette', cursive;
-    left: -10px;
+    font-family: 'Roboto', sans-serif;
+    left: 10px;
     font-size: 50px;
 }
 
 .quote p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }

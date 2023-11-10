@@ -225,34 +225,73 @@
                 <li class="list-inline-item">Literature</li>
                 <li class="list-inline-item">Photography</li>
               </ul>
-              <div id="cinema" class="carousel slide" data-bs-ride="true">
+              <div id="cinema" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#cinema" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Quote 1"></button>
                   <button type="button" data-bs-target="#cinema" data-bs-slide-to="1" aria-label="Quote 2"></button>
                   <button type="button" data-bs-target="#cinema" data-bs-slide-to="2" aria-label="Quote 3"></button>
+                  <button type="button" data-bs-target="#cinema" data-bs-slide-to="3" aria-label="Quote 4"></button>
+                  <button type="button" data-bs-target="#cinema" data-bs-slide-to="4" aria-label="Quote 5"></button>
+                  <button type="button" data-bs-target="#cinema" data-bs-slide-to="5" aria-label="Quote 6"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <svg
-                      class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-                      width="800"
-                      height="300"
-                      xmlns="http://www.w3.org/2000/svg"
-                      role="img"
-                      preserveAspectRatio="xMidYMid slice"
-                      focusable="false"
-                    >
-                      <title>Placeholder</title>
-                      <rect width="100%" height="100%" fill="#8f7c64a0"></rect>
-                    </svg>
+                  <svg
+                    class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+                    width="800"
+                    height="500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false"
+                  >
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#8f7c64a0"></rect>
+                  </svg>
+                  <div class="carousel-item active" data-bs-interval="5000">
                     <div class="quote">
                       <h6>With great power comes great responsibility.</h6>
-                      <p>Ben Parker</p>
+                      <p>Spiderman, <em>2002</em> - <em>Sam Raimi</em></p>
                     </div>
                   </div>
-                  <div class="carousel-item"></div>
-                  <div class="carousel-item"></div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <div class="quote">
+                      <h6>No! Try not. Do, or do not. There is no try.</h6>
+                      <p>Star Wars Ep. V: The Empire Strikes Back, <em>1980</em> - <em>Irvin Kershner</em></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="quote">
+                      <h6>Hasta la vista, baby</h6>
+                      <p>Terminator: Judgment Day, <em>1991</em> - <em>James Cameron</em></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="quote">
+                      <h6>Keep your friends close, but your enemies closer.</h6>
+                      <p>The Godfather Part II, <em>1974</em> - <em>Francis Ford Coppola</em></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="quote">
+                      <h6>Nobody puts Baby in a corner.</h6>
+                      <p>Dirty Dancing, <em>1987</em> - <em>Emile Ardolino</em></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="quote quote-2-rows">
+                      <h6>We’ve always defined ourselves by the ability to overcome the impossible.</h6>
+                      <p>Interstellar, <em>2014</em> - <em>Christopher Nolan</em></p>
+                    </div>
+                  </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#cinema" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cinema" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
           </div>
@@ -261,4 +300,5 @@
     </main>
   </body>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </html>

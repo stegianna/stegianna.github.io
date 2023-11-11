@@ -12,6 +12,13 @@
       crossorigin="anonymous"
     />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
@@ -219,81 +226,132 @@
         <div class="container">
           <div class="section-title">
             <h2>Interests</h2>
-            <div class="section-content">
-              <ul id="interests-filters" class="list-inline mx-auto justify-content-center">
-                <li class="list-inline-item interests-filter-active">Cinema</li>
-                <li class="list-inline-item">Literature</li>
-                <li class="list-inline-item">Photography</li>
-              </ul>
-              <div id="cinema" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#cinema" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Quote 1"></button>
-                  <button type="button" data-bs-target="#cinema" data-bs-slide-to="1" aria-label="Quote 2"></button>
-                  <button type="button" data-bs-target="#cinema" data-bs-slide-to="2" aria-label="Quote 3"></button>
-                  <button type="button" data-bs-target="#cinema" data-bs-slide-to="3" aria-label="Quote 4"></button>
-                  <button type="button" data-bs-target="#cinema" data-bs-slide-to="4" aria-label="Quote 5"></button>
-                  <button type="button" data-bs-target="#cinema" data-bs-slide-to="5" aria-label="Quote 6"></button>
-                </div>
-                <div class="carousel-inner">
-                  <svg
-                    class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-                    width="800"
-                    height="500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#8f7c64a0"></rect>
-                  </svg>
-                  <div class="carousel-item active" data-bs-interval="5000">
-                    <div class="quote">
-                      <h6>With great power comes great responsibility.</h6>
-                      <p>Spiderman, <em>2002</em> - <em>Sam Raimi</em></p>
-                    </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="5000">
-                    <div class="quote">
-                      <h6>No! Try not. Do, or do not. There is no try.</h6>
-                      <p>Star Wars Ep. V: The Empire Strikes Back, <em>1980</em> - <em>Irvin Kershner</em></p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="quote">
-                      <h6>Hasta la vista, baby</h6>
-                      <p>Terminator: Judgment Day, <em>1991</em> - <em>James Cameron</em></p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="quote">
-                      <h6>Keep your friends close, but your enemies closer.</h6>
-                      <p>The Godfather Part II, <em>1974</em> - <em>Francis Ford Coppola</em></p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="quote">
-                      <h6>Nobody puts Baby in a corner.</h6>
-                      <p>Dirty Dancing, <em>1987</em> - <em>Emile Ardolino</em></p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="quote quote-2-rows">
-                      <h6>We’ve always defined ourselves by the ability to overcome the impossible.</h6>
-                      <p>Interstellar, <em>2014</em> - <em>Christopher Nolan</em></p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#cinema" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#cinema" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+          </div>
+          <div class="section-content">
+            <ul id="interests-filters" class="list-inline mx-auto justify-content-center">
+              <li id="cinema-nav" class="list-inline-item interests-filter-active">Cinema</li>
+              <li id="literature-nav" class="list-inline-item">Literature</li>
+              <li id="photography-nav" class="list-inline-item">Photography</li>
+            </ul>
+            <!-- Cinema -->
+            <div id="cinema" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#cinema" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Quote 1"></button>
+                <button type="button" data-bs-target="#cinema" data-bs-slide-to="1" aria-label="Quote 2"></button>
+                <button type="button" data-bs-target="#cinema" data-bs-slide-to="2" aria-label="Quote 3"></button>
+                <button type="button" data-bs-target="#cinema" data-bs-slide-to="3" aria-label="Quote 4"></button>
+                <button type="button" data-bs-target="#cinema" data-bs-slide-to="4" aria-label="Quote 5"></button>
+                <button type="button" data-bs-target="#cinema" data-bs-slide-to="5" aria-label="Quote 6"></button>
               </div>
+              <div class="carousel-inner">
+                <svg
+                  class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+                  width="800"
+                  height="500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#8f7c64a0"></rect>
+                </svg>
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <div class="quote">
+                    <h6>With great power comes great responsibility.</h6>
+                    <p>Spiderman, <em>2002</em> - <em>Sam Raimi</em></p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div class="quote">
+                    <h6>No! Try not. Do, or do not. There is no try.</h6>
+                    <p>Star Wars Ep. V: The Empire Strikes Back, <em>1980</em> - <em>Irvin Kershner</em></p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="quote">
+                    <h6>Hasta la vista, baby.</h6>
+                    <p>Terminator: Judgment Day, <em>1991</em> - <em>James Cameron</em></p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="quote quote-2-rows">
+                    <h6>You never win with violence. You only win when you maintain your dignity. Dignity always prevails.</h6>
+                    <p>Green Book, <em>2018</em> - <em>Peter Farrelly</em></p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="quote">
+                    <h6>Nobody puts Baby in a corner.</h6>
+                    <p>Dirty Dancing, <em>1987</em> - <em>Emile Ardolino</em></p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="quote quote-2-rows">
+                    <h6>We’ve always defined ourselves by the ability to overcome the impossible.</h6>
+                    <p>Interstellar, <em>2014</em> - <em>Christopher Nolan</em></p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#cinema" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#cinema" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+            <!-- End of cinema-->
+            <!-- Literature -->
+            <div id="literature" class="carousel slide interest-hidden" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#literature" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Quote 1"></button>
+                <button type="button" data-bs-target="#literature" data-bs-slide-to="1" aria-label="Quote 2"></button>
+                <button type="button" data-bs-target="#literature" data-bs-slide-to="2" aria-label="Quote 3"></button>
+                <button type="button" data-bs-target="#literature" data-bs-slide-to="3" aria-label="Quote 4"></button>
+                <button type="button" data-bs-target="#literature" data-bs-slide-to="4" aria-label="Quote 5"></button>
+                <button type="button" data-bs-target="#literature" data-bs-slide-to="5" aria-label="Quote 6"></button>
+              </div>
+              <div class="carousel-inner">
+                <svg
+                  class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+                  width="800"
+                  height="500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#8f7c64a0"></rect>
+                </svg>
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <div class="quote quote-2-rows">
+                    <h6>
+                      At the temple there is a poem called "Loss" carved into the stone. It has three words, but the poet has scratched them out. You cannot read loss, only feel
+                      it.
+                    </h6>
+                    <p>Arthur Golden, <em>Memoirs of a Geisha</em></p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div class="quote">
+                    <h6>A man is responsible for his ignorance.</h6>
+                    <p>Milan Kundera, <em>Laughable Loves</em></p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#literature" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#literature" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- End of Literature -->
           </div>
         </div>
       </section>

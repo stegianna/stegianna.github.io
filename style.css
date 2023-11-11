@@ -46,6 +46,7 @@
     margin: 0 0 10px 0;
     font-size: 60px;
     font-family: 'Helvetica', 'Arial', sans-serif;
+    text-align: center;
 }
 
 #hero .hero-container h2{
@@ -121,6 +122,7 @@
 .section-content{
     margin: 50px auto;
     position: relative;
+    text-align: center;
 }
 
 .timeline-item-right{
@@ -225,15 +227,13 @@
     cursor: pointer;
 }
 
-#interests-filters li:hover{
+#interests-filters li:not(.interests-filter-active):hover{
     color: #8f7c64;
     transition: 0.3s ease-in-out;
 }
 
 .interests-filter-active{
-    border-bottom: #8f7c64;
-    border-style: none none solid none;
-    border-width: 2px;
+    border-bottom: 2px solid #8f7c64;
     color: #8f7c64;
 }
 
@@ -241,8 +241,12 @@
     position: absolute;
 }
 
-#cinema{
+#cinema, #literature{
     top: 30px;
+}
+
+.interest-hidden{
+    display: none;
 }
 
 .carousel-indicators [data-bs-target]{
@@ -258,17 +262,35 @@
     margin: 100px 200px;    
 }
 
-.quote-2-rows{
+#cinema .quote-2-rows{
     margin:70px 200px; 
 }
 
-.quote h6{
+#literature .quote-2-rows{
+    margin:73px 200px; 
+}
+
+#cinema .quote-3-rows{
+    margin:55px 200px; 
+}
+
+#literature .quote-3-rows{
+    margin:55px 200px; 
+}
+
+#cinema .quote h6{
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: 450;
 }
 
-.quote h6::before{
+#literature .quote h6{
+    font-family: 'Courgette', coursive;
+    font-size: 25px;
+    font-weight: 450;
+}
+
+#cinema .quote h6::before{
     content: "“";
     position: relative;
     font-family: 'Roboto', sans-serif;
@@ -276,7 +298,7 @@
     font-size: 50px;
 }
 
-.quote h6::after{
+#cinema .quote h6::after{
     content: "”";
     position: relative;
     font-family: 'Roboto', sans-serif;
@@ -284,6 +306,23 @@
     font-size: 50px;
 }
 
+#literature .quote h6::before{
+    content: "“";
+    position: relative;
+    font-family: 'Courgette', coursive;
+    left: -10px;
+    font-size: 45px;
+}
+
+#literature .quote h6::after{
+    content: "”";
+    position: relative;
+    font-family: 'Courgette', coursive;
+    left: 10px;
+    font-size: 45px;
+}
+
 .quote p{
     font-family: Helvetica, Arial, sans-serif;
+    margin-top: 30px;
 }

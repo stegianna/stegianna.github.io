@@ -60,7 +60,7 @@ function callbackFuncSections(entries, _observer) {
 let optionsSections = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5,
+    threshold: 0.65,
 };
 
 let observerSections = new IntersectionObserver(

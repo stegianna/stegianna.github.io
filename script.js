@@ -1,6 +1,6 @@
-/** Scroll Logic **/
+/** SCROLL LOGIC **/
 
-function callbackFunc(entries, observer) {
+function callbackFuncSkill(entries, _observer) {
     entries.forEach((entry) => {
         let el = document.getElementById(entry.target.id);
         //console.log(el);
@@ -11,15 +11,19 @@ function callbackFunc(entries, observer) {
     });
 }
 
-let options = {
+let optionsSkill = {
     root: null,
     rootMargin: '0px',
     threshold: 0.3,
 };
 
-let observer = new IntersectionObserver(callbackFunc, options);
+let observerSkill = new IntersectionObserver(callbackFuncSkill, optionsSkill);
 
-document.querySelectorAll('.skill-bar').forEach((el) => observer.observe(el));
+document
+    .querySelectorAll('.skill-bar')
+    .forEach((el) => observerSkill.observe(el));
+
+/** NAVBAR LOGIC */
 
 const header = document.getElementById('header');
 
@@ -33,7 +37,47 @@ window.onscroll = () => {
     }
 };
 
-/** Interests Logic **/
+function callbackFuncSections(entries, _observer) {
+    let navbarLinks = document
+        .querySelector('#navbar')
+        .querySelectorAll('li a');
+
+    entries.forEach((entry) => {
+        //console.log(entry.isIntersecting + ': ' + entry.target.id);
+        if (entry.isIntersecting) {
+            if (entry.target.id === 'hero') {
+                navLinkEl = document.getElementById(`nav-link-home`);
+            } else {
+                navLinkEl = document.getElementById(
+                    `nav-link-${entry.target.id}`
+                );
+            }
+            activeNavbarLink(navLinkEl, navbarLinks);
+        }
+    });
+}
+
+let optionsSections = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5,
+};
+
+let observerSections = new IntersectionObserver(
+    callbackFuncSections,
+    optionsSections
+);
+
+document
+    .querySelectorAll('section')
+    .forEach((el) => observerSections.observe(el));
+
+function activeNavbarLink(element, navbarLinks) {
+    navbarLinks.forEach((el) => el.classList.remove('active'));
+    element.classList.add('active');
+}
+
+/** INTERESTS LOGIC **/
 
 const interests = document.querySelectorAll(
     '#cinema-nav, #literature-nav, #photography-nav'

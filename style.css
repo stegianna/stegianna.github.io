@@ -129,6 +129,7 @@
     padding: 0 100px 20px 20px;
     border-left: 2px solid #6667ab;
     position: relative;
+    text-align: left;
 }
 
 .timeline-item-left{

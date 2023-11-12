@@ -123,6 +123,7 @@ interests.forEach((el) => {
                 case 'photography':
                     backIn(requested_el, 'right');
                     backOut(visible_el, 'left');
+                    break;
             }
             changeInterestVisibility(requested_el, visible_el);
         }
@@ -132,11 +133,11 @@ interests.forEach((el) => {
 function backOut(el, direction) {
     switch (direction) {
         case 'left':
-            el.classList.remove('animate__animated', 'animate__backInLeft');
+            removeAnimatedClass(el);
             el.classList.add('animate__animated', 'animate__backOutLeft');
             break;
         case 'right':
-            el.classList.remove('animate__animated', 'animate__backInRight');
+            removeAnimatedClass(el);
             el.classList.add('animate__animated', 'animate__backOutRight');
             break;
     }
@@ -145,14 +146,26 @@ function backOut(el, direction) {
 function backIn(el, direction) {
     switch (direction) {
         case 'left':
-            el.classList.remove('animate__animated', 'animate__backOutLeft');
+            removeAnimatedClass(el);
             el.classList.add('animate__animated', 'animate__backInLeft');
             break;
         case 'right':
-            el.classList.remove('animate__animated', 'animate__backOutRight');
+            removeAnimatedClass(el);
             el.classList.add('animate__animated', 'animate__backInRight');
             break;
     }
+}
+
+const animatedclasses = [
+    'animate__animated',
+    'animate__backOutRight',
+    'animate__backInRight',
+    'animate__backOutLeft',
+    'animate__backInLeft',
+];
+
+function removeAnimatedClass(element) {
+    element.classList.remove(...animatedclasses);
 }
 
 function changeInterestVisibility(elToShow, elToHide) {

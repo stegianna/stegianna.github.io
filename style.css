@@ -328,11 +328,23 @@
     margin-top: 30px;
 }
 
-.picture{
+.photography-item{
+    overflow: hidden;
     height: 300px;
     width: 300px;
     text-align: center;
     margin: 0px 10px 20px 10px;
+    display: inline-block;
+}
+
+.picture{
+    height: 300px;
+    width: 300px;
+    transition: all 0.8s ease-in-out;
+}
+
+.picture:hover{
+    transform: scale(1.2);
 }
 
 #interests .section-content{

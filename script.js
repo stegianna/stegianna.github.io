@@ -172,3 +172,10 @@ function changeInterestVisibility(elToShow, elToHide) {
     elToHide.classList.add('interest-hidden');
     elToShow.classList.remove('interest-hidden');
 }
+
+/** GLightbox */
+
+var lightbox = GLightbox();
+lightbox.on('open', (target) => {
+    console.log('lightbox opened');
+});

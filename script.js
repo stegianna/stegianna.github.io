@@ -179,3 +179,11 @@ var lightbox = GLightbox();
 lightbox.on('open', (target) => {
     console.log('lightbox opened');
 });
+
+/** Particles 
+//particlesJS.load(dom-id, path-json, callback (optional));
+
+particlesJS.load('hero', 'assets/particles.json', () => {
+    console.log('callback - particles.js config loaded');
+});
+*/

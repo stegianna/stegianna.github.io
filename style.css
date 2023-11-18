@@ -86,7 +86,7 @@
 }
 
 .sub-section{
-    top: 30px;
+    margin-top: 28px;
     text-align: center;
     position: relative;
 }
@@ -120,7 +120,7 @@
 }
 
 .section-content{
-    margin: 50px auto;
+    margin: 50px auto 0px auto;
     position: relative;
     text-align: center;
 }
@@ -243,8 +243,7 @@
 }
 
 #cinema, #literature, #photography{
-    top: 30px;
-    position: relative;
+    margin-top: 35px;
 }
 
 .interest-hidden{
@@ -334,4 +333,31 @@
     width: 300px;
     text-align: center;
     margin: 0px 10px 20px 10px;
+}
+
+#interests .section-content{
+    padding-bottom: 100px;
+}
+
+#footer{
+    background-color: #6667ab90;
+    text-align: center;
+}
+
+#footer h3{
+    font-family: 'Courgette', coursive;
+    padding: 50px 0px 20px 0px;
+    margin: 0px 0px;
+}
+
+#footer p{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.social-links{
+    padding: 20px;
+}
+
+.copiright{
+    font-size: 15px;
 }

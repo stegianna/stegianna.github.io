@@ -373,3 +373,37 @@
 .copiright{
     font-size: 15px;
 }
+
+
+/* MOBILE */
+
+@media screen and (max-width: 575px){
+    #resume .lg{
+        display: none;
+    }
+
+    #resume .sm{
+        text-align: left;
+        
+        padding: 0px 10px 0px 45px;
+    }
+
+    .timeline-item-right{
+        padding: 0px 0px 20px 20px
+    }
+
+    #resume .sub-section-content .col{
+        padding-top: 25px;
+    }
+
+    #resume .sub-section-content .row{
+        padding-top: 0px;
+    }
+
+}
+
+@media screen and (min-width: 576px){
+    #resume .sm{
+        display: none;
+    }
+}

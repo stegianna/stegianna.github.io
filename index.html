@@ -26,22 +26,29 @@
   </head>
   <body>
     <!-- Header-->
-    <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+    <header id="header" class="fixed-top d-flex justify-content-center header-transparent">
       <nav id="navbar" class="navbar navbar-expand-sm">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a id="nav-link-home" class="nav-link active" href="#hero">Home</a>
-          </li>
-          <li class="nav-item">
-            <a id="nav-link-about" class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a id="nav-link-resume" class="nav-link" href="#resume">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a id="nav-link-interests" class="nav-link" href="#interests">Interests</a>
-          </li>
-        </ul>
+        <div class="collapsed-navbar">
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="nav-link-home" class="nav-link active" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="nav-link-about" class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a id="nav-link-resume" class="nav-link" href="#resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a id="nav-link-interests" class="nav-link" href="#interests">Interests</a>
+              </li>
+            </ul>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
       </nav>
     </header>
     <!-- End Header-->

@@ -378,6 +378,36 @@
 /* MOBILE */
 
 @media screen and (max-width: 575px){
+
+    #header{
+        justify-content: end!important;
+    }
+
+    .header-transparent:has(div.show){
+        background: #8f7c64a0;
+        height: 200px;
+    }
+    
+    .header-transparent{
+        transition: 0.7s;
+    }
+
+    #navbar:has(div.show){
+        position: fixed;
+        top: 2.3%
+    }
+
+    .navbar-toggler{
+        display: inline-flex;
+        margin-right: 15px;
+    }
+
+
+    #collapsibleNavbar{
+        position: fixed;
+        left: 5%;
+    }
+
     #resume .lg{
         display: none;
     }

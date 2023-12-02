@@ -429,6 +429,11 @@
         padding-top: 0px;
     }
 
+    #interests-filters li{
+        margin: 0px 20px 7px 20px;
+        cursor: pointer;
+    }
+
     #cinema .sm, #literature .sm{
         text-align: left;
     }
@@ -450,7 +455,7 @@
         font-size: 20px;
     }
 
-    .sm ul li p{
+    .sm ul li p:not(.quote-reference){
         margin-bottom: 5px;
         font-weight: 500;
         font-size: 16px;
@@ -462,6 +467,7 @@
     #literature .sm .quote-reference{
         font-family: Helvetica, Arial, sans-serif;
         font-size: 15px;
+        margin-bottom: 0px;
     }
 
 }

@@ -106,24 +106,31 @@ interests.forEach((el) => {
                 (el) => !el.classList.contains('interest-hidden')
             )[0];
             let requested_el = mapInterestsNavContent[this.id];
-            switch (requested_el.id) {
-                case 'cinema':
-                    backIn(requested_el, 'left');
-                    backOut(visible_el, 'right');
-                    break;
-                case 'literature':
-                    if (visible_el.id === 'cinema') {
-                        backIn(requested_el, 'right');
-                        backOut(visible_el, 'left');
-                    } else if (visible_el.id === 'photography') {
+
+            // in mobile version all the transitions from left to avoid strange behavior of resizing
+            if (!isMobileVersion()) {
+                switch (requested_el.id) {
+                    case 'cinema':
                         backIn(requested_el, 'left');
                         backOut(visible_el, 'right');
-                    }
-                    break;
-                case 'photography':
-                    backIn(requested_el, 'right');
-                    backOut(visible_el, 'left');
-                    break;
+                        break;
+                    case 'literature':
+                        if (visible_el.id === 'cinema') {
+                            backIn(requested_el, 'right');
+                            backOut(visible_el, 'left');
+                        } else if (visible_el.id === 'photography') {
+                            backIn(requested_el, 'left');
+                            backOut(visible_el, 'right');
+                        }
+                        break;
+                    case 'photography':
+                        backIn(requested_el, 'right');
+                        backOut(visible_el, 'left');
+                        break;
+                }
+            } else {
+                backIn(requested_el, 'left');
+                backOut(visible_el, 'right');
             }
             changeInterestVisibility(requested_el, visible_el);
         }
@@ -171,6 +178,16 @@ function removeAnimatedClass(element) {
 function changeInterestVisibility(elToShow, elToHide) {
     elToHide.classList.add('interest-hidden');
     elToShow.classList.remove('interest-hidden');
+}
+
+// function useful for mobile version
+function isMobileVersion() {
+    // size: bootstrap xs
+    if (window.innerWidth <= 575) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 /** GLightbox */

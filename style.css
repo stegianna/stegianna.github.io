@@ -379,6 +379,10 @@
 
 @media screen and (max-width: 575px){
 
+    .lg{
+        display: none;
+    }
+
     #header{
         justify-content: end!important;
     }
@@ -408,13 +412,8 @@
         left: 5%;
     }
 
-    #resume .lg{
-        display: none;
-    }
-
     #resume .sm{
-        text-align: left;
-        
+        text-align: left;  
         padding: 0px 10px 0px 45px;
     }
 
@@ -430,10 +429,46 @@
         padding-top: 0px;
     }
 
+    #cinema .sm, #literature .sm{
+        text-align: left;
+    }
+
+    #cinema .sm ul{
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #literature .sm ul{
+        font-family: 'Courgette', coursive;
+    }
+
+    .sm ul li{
+        padding: 10px 0px;
+    }
+
+    .sm ul li::marker{
+        color: #8f7c64;
+        font-size: 20px;
+    }
+
+    .sm ul li p{
+        margin-bottom: 5px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .sm ul li p em{
+        font-size: 15px;
+    }
+    #literature .sm .quote-reference{
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 15px;
+    }
+
 }
 
 @media screen and (min-width: 576px){
-    #resume .sm{
+    .sm{
         display: none;
     }
+
 }

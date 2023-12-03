@@ -388,7 +388,7 @@
     }
 
     .header-transparent:has(div.show){
-        background: #8f7c64a0;
+        background: #8f7c64;
         height: 200px;
     }
     
